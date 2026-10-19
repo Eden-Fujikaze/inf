@@ -16,9 +16,11 @@ with open("nowe.txt", "r") as nowe, open("slowa.txt", "r") as slowa, open("wynik
         else:
             dict2[len(row)] = 1
 
-    ans.write("4.1 ")
+    ans.write("5.1 ")
     for key in dict2:
         val = dict2[key]
         ans.write(f"{key} {val}\n")
-
-
+    ans.write("5.2 ")
+    for key in dict3:
+        val = dict3[key]
+        ans.write(f"{key} {val[0]} {val[1]}\n")
