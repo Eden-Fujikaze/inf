@@ -20,10 +20,9 @@ for value in rows:
     if value == num_sum:
         factorial_sums.append(value)
 
-    if current and gcd(*current, value) > 1:
-        current.append(value)
-    else:
-        current = [value]
+    while current and gcd(*current, value) == 1:
+        current.pop(0)
+    current.append(value)
 
     if len(current) > len(best):
         best = current[:]
