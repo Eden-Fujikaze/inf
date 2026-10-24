@@ -5,4 +5,4 @@ def NWD(a: int, b:int) -> int:
         b = temp % b
     return a
 
-print(NWD(125,300))
+print(NWD(74,455))

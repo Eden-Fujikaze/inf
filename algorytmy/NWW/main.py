@@ -6,4 +6,4 @@ def NWW(a: int, b: int) -> int:
             return a*i
     return None
 
-print(NWW(4,3))
+print(NWW(15,25))
