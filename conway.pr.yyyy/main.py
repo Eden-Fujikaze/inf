@@ -34,10 +34,10 @@ def step(board: list):
     return new_board
 
 with open("wyniki_5.txt", "w") as dest:
-    g = rows
+    board = rows
     for _ in range(36):
-        g = step(g)
-    dest.write(f"5.1 {check_neighbours(g, 18, 1)}\n")
+        board = step(board)
+    dest.write(f"5.1 {check_neighbours(board, 18, 1)}\n")
     dest.write(f"5.2 {sum(row.count("X") for row in step(rows))}\n")
     board = rows
     for generation in range(2, 101):
